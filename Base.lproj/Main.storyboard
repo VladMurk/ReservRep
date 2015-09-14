@@ -43,7 +43,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="ButtonL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4US-M7-Shs"/>
+                                    <action selector="ButEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eK1-yp-3zs"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-yF-Kjf">
@@ -99,7 +99,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="MBG-1W-Oei"/>
                     <connections>
-                        <outlet property="ButEnter" destination="W2D-NG-na4" id="Q1N-qg-eLh"/>
                         <outlet property="ButReg" destination="P02-XJ-dzq" id="EWd-IT-yfr"/>
                         <outlet property="EmailR" destination="JJn-dy-cRI" id="Avy-Zi-jiz"/>
                         <outlet property="LoginL" destination="LIa-wb-hPT" id="XbQ-Lu-TAu"/>
@@ -108,7 +107,7 @@
                         <outlet property="PassR" destination="Sq1-4w-nm2" id="yOu-zJ-YIZ"/>
                         <outlet property="rePassR" destination="pvY-PV-zwW" id="HJJ-8n-skf"/>
                         <outlet property="regView" destination="1X7-yF-Kjf" id="7hE-7G-mNg"/>
-                        <segue destination="Obn-75-HPl" kind="push" id="gnO-mJ-oJG"/>
+                        <segue destination="Obn-75-HPl" kind="push" identifier="CloseZone" id="gnO-mJ-oJG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,7 +125,19 @@
                     <view key="view" contentMode="scaleToFill" id="eBy-tg-r1y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Вошел!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-o1-9jG">
+                                <rect key="frame" x="279" y="289" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="e9q-o1-9jG" secondAttribute="centerY" id="AKS-Bj-W8r"/>
+                            <constraint firstAttribute="centerX" secondItem="e9q-o1-9jG" secondAttribute="centerX" id="OCW-IX-OmK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qZs-2m-86T"/>
                 </viewController>

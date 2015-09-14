@@ -13,12 +13,12 @@
 @property (weak, nonatomic) IBOutlet UIView *regView;
 @property (weak, nonatomic) IBOutlet UITextField *LoginL;
 @property (weak, nonatomic) IBOutlet UITextField *PassL;
-@property (weak, nonatomic) IBOutlet UIButton *ButEnter;
 @property (weak, nonatomic) IBOutlet UITextField *LoginR;
 @property (weak, nonatomic) IBOutlet UITextField *EmailR;
 @property (weak, nonatomic) IBOutlet UITextField *PassR;
 @property (weak, nonatomic) IBOutlet UITextField *rePassR;
 @property (weak, nonatomic) IBOutlet UIButton *ButReg;
+- (IBAction)ButEnter:(id)sender;
 
 
 
