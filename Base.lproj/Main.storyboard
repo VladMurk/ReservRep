@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJr-gk-td1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9sK-SZ-GoH">
+                                <rect key="frame" x="168" y="72" width="264" height="29"/>
+                                <segments>
+                                    <segment title="Вход"/>
+                                    <segment title="Регистрация"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Segment:" destination="BYZ-38-t0r" eventType="valueChanged" id="HjV-b9-WFe"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIa-wb-hPT">
+                                <rect key="frame" x="16" y="137" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JQ-hm-f5b">
+                                <rect key="frame" x="16" y="175" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2D-NG-na4">
+                                <rect key="frame" x="208" y="213" width="184" height="30"/>
+                                <state key="normal" title="Вход">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4US-M7-Shs"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-yF-Kjf">
+                                <rect key="frame" x="16" y="108" width="568" height="373"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKf-ql-sPg">
+                                        <rect key="frame" x="114" y="8" width="329" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-dy-cRI">
+                                        <rect key="frame" x="114" y="46" width="329" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sq1-4w-nm2">
+                                        <rect key="frame" x="114" y="84" width="329" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P02-XJ-dzq">
+                                        <rect key="frame" x="194" y="160" width="180" height="30"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Повторить пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvY-PV-zwW">
+                                        <rect key="frame" x="114" y="122" width="329" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9sK-SZ-GoH" secondAttribute="centerX" id="1uT-zN-fug"/>
+                            <constraint firstItem="1X7-yF-Kjf" firstAttribute="centerX" secondItem="P02-XJ-dzq" secondAttribute="centerX" id="9kQ-MV-L1b"/>
+                            <constraint firstItem="1X7-yF-Kjf" firstAttribute="centerX" secondItem="JJn-dy-cRI" secondAttribute="centerX" id="9wM-C9-fMG"/>
+                            <constraint firstItem="1X7-yF-Kjf" firstAttribute="centerX" secondItem="pvY-PV-zwW" secondAttribute="centerX" id="DTn-Jm-CGC"/>
+                            <constraint firstItem="1X7-yF-Kjf" firstAttribute="centerX" secondItem="Sq1-4w-nm2" secondAttribute="centerX" id="HHe-eY-bZG"/>
+                            <constraint firstAttribute="centerX" secondItem="8JQ-hm-f5b" secondAttribute="centerX" id="QkV-bD-sOD"/>
+                            <constraint firstAttribute="centerX" secondItem="1X7-yF-Kjf" secondAttribute="centerX" id="Rk0-Wc-mO4"/>
+                            <constraint firstItem="8JQ-hm-f5b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XrN-us-Lpv"/>
+                            <constraint firstAttribute="centerX" secondItem="W2D-NG-na4" secondAttribute="centerX" id="bYw-xq-NGR"/>
+                            <constraint firstItem="LIa-wb-hPT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gPW-Jz-n0b"/>
+                            <constraint firstItem="1X7-yF-Kjf" firstAttribute="centerX" secondItem="bKf-ql-sPg" secondAttribute="centerX" id="ibV-ZI-Q3X"/>
+                            <constraint firstItem="8JQ-hm-f5b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k2A-cq-A3K"/>
+                            <constraint firstItem="LIa-wb-hPT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mYk-Jo-BcJ"/>
+                            <constraint firstAttribute="centerX" secondItem="LIa-wb-hPT" secondAttribute="centerX" id="u3U-py-A3D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MBG-1W-Oei"/>
+                    <connections>
+                        <outlet property="ButEnter" destination="W2D-NG-na4" id="Q1N-qg-eLh"/>
+                        <outlet property="ButReg" destination="P02-XJ-dzq" id="EWd-IT-yfr"/>
+                        <outlet property="EmailR" destination="JJn-dy-cRI" id="Avy-Zi-jiz"/>
+                        <outlet property="LoginL" destination="LIa-wb-hPT" id="XbQ-Lu-TAu"/>
+                        <outlet property="LoginR" destination="bKf-ql-sPg" id="eGg-PX-6qk"/>
+                        <outlet property="PassL" destination="8JQ-hm-f5b" id="lTw-ZN-vKV"/>
+                        <outlet property="PassR" destination="Sq1-4w-nm2" id="yOu-zJ-YIZ"/>
+                        <outlet property="rePassR" destination="pvY-PV-zwW" id="HJJ-8n-skf"/>
+                        <outlet property="regView" destination="1X7-yF-Kjf" id="7hE-7G-mNg"/>
+                        <segue destination="Obn-75-HPl" kind="push" id="gnO-mJ-oJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J1d-85-32h">
+            <objects>
+                <viewController id="Obn-75-HPl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1RP-PM-xAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="M5u-Oz-2KA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eBy-tg-r1y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qZs-2m-86T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNz-EN-5Q7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="315"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jph-So-34i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zJr-gk-td1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L5k-eQ-y53">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="meZ-WY-CQC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxU-s1-n2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="315"/>
+        </scene>
+    </scenes>
+</document>
